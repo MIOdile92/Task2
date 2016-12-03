@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>多列布局</title>
+<link href="duolie.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<!-- 第一种：使用div盒子模型 比较灵活，但构造不方便，div标签太多-->
+<div class="styleOne">
+	<div class="s1">
+    	<div class="s11"> s11</div>
+    	<div class="s12"> s12</div>
+    </div>
+    <div class="s2"> s2</div>
+    <div class="s3">
+    	<div class="s31"> s31</div>
+    	<div class="s32"> s32</div>
+    	<div class="s33"> s33</div>
+    </div>
+</div>
+
+<!-- 第二种：列表的column属性 结构简单，适用于文章和简单的图文排版，
+    但是其他情况不是很适用 -->
+<div class="styleTwo">
+    <ul class="ul1">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <ul class="ul2">
+        <li>4</li>
+        <li>5</li>
+    </ul>
+</div>
+
+<!-- 第三种：表格，写起来也比较方便灵活，但后期修改没有div盒子方便 -->
+<div class="styleThree">
+    <table cellpadding="10" cellspacing="5">
+        <tr>
+            <td colspan="2">a</td>
+            <td>b</td>
+        </tr>
+        <tr>
+            <td>d</td>
+            <td>e</td>
+            <td rowspan="2">f</td>
+        </tr>
+        <tr>
+            <td>g</td>
+            <td>h</td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
