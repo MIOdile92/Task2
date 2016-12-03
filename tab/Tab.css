@@ -1,0 +1,44 @@
+
+*{
+	margin: 0 auto;
+	padding: 0;
+}
+.tab{
+	position: relative;
+	margin: o auto;
+	width: 600px;
+	height: 570px;
+	background-color: #dddddd;
+}
+#tab_menu{
+	top: 20px;
+	list-style: none;
+	width: 337px;
+	height: 54px;
+	background-color: #c3c3c3;
+}
+#tab_menu .selected{
+	color: #dddddd;
+	background: #484848;
+}
+#tab_menu li{
+	float: left;
+	padding: 16px 26px;
+	text-align: center;
+	cursor: pointer;
+	color: #666666;
+}
+#tab_menu li:hover{
+	background: #484848;
+	color: #dddddd;
+
+}
+#message{
+	clear: both;
+	padding-top: 50px;
+	height: 500px;
+	width: 600px;
+}
+.hide{
+	display: none;
+}
